@@ -1,13 +1,13 @@
-import Divider from "../components/Divider";
-import Footer from "../components/Footer";
-import Star from "../components/Star";
-import { Hero, About, Technologies } from "../components/portfolio";
-import Projects from "../components/portfolio/Projects";
-import Works from "../components/portfolio/Works";
+import Divider from "@/components/Divider";
+import Footer from "@/components/Footer";
+import Star from "@/components/Star";
+import { Hero, About, Technologies } from "@/components/portfolio";
+import Projects from "@/components/portfolio/Projects";
+import Works from "@/components/portfolio/Works";
 const App = () => {
   return (
     <>
-      <div className="">
+      <div className="px-4 py-2">
         <Hero />
         <div className="group">
           <Divider id="about" label="About" />
