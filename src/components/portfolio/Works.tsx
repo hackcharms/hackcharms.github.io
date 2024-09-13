@@ -1,7 +1,7 @@
 import { tcw } from "../../assets";
 import { credilio } from "../../assets";
 import Triangle from "./Triangle";
-export default function Works({}) {
+export default function Works() {
   return (
     <div className="relative mt-20">
       <div className="absolute left-[10%] mx-auto rotate-45 duration-1000 group-hover:rotate-0">
@@ -11,7 +11,7 @@ export default function Works({}) {
         <Triangle />
       </div>
       <h1 className="px-4 text-4xl font-bold">Works</h1>
-      <h3 className="pl-4 text-xl"> Companies I have worked in so far.</h3>
+      <h2 className="pl-4 text-xl"> Companies I have worked in so far.</h2>
       <div>
         <WorkCard />
       </div>

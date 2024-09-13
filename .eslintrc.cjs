@@ -18,6 +18,7 @@ module.exports = {
             {
                 cssFiles: ["src/**/*.css"],
                 callees: ["classnames", "clsx", "twMerge", "cn"],
+                whitelist: ['mic-drop-animation']
             },
         ],
     'react-refresh/only-export-components': [

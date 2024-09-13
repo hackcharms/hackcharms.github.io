@@ -24,7 +24,7 @@ export default function Curve({ dividerClass = "", m = 30, count = 5 }) {
             key={index}
             strokeWidth="1"
             fill="transparent"
-            className={`transition-all duration-[3s] ease-in-out [stroke-dasharray:200%] [stroke-dashoffset:200%] group-hover:[stroke-dashoffset:0] text-secondary-${
+            className={"transition-all duration-[3s] ease-in-out [stroke-dasharray:200%] [stroke-dashoffset:200%] group-hover:[stroke-dashoffset:0]"+` text-secondary-${
               ((Math.random() * 8) ^ 1) + 1
             }00`}
           />
