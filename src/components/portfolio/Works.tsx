@@ -11,7 +11,7 @@ export default function Works() {
         <Triangle />
       </div>
       <h1 className="px-4 text-4xl font-bold">Works</h1>
-      <h3 className="pl-4 text-xl"> Companies I have worked in so far.</h3>
+      <h2 className="pl-4 text-xl"> Companies I have worked in so far.</h2>
       <div>
         <WorkCard />
       </div>
