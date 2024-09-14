@@ -5,7 +5,7 @@ export * from "./projects";
 
 export const navLinks = [
   {
-    path: "#about",
+    path: "/about",
     label: "About",
   },
   {
@@ -13,15 +13,15 @@ export const navLinks = [
     label: "Experience",
   },
   {
-    path: "#technologies",
+    path: "/#technologies",
     label: "Tech Stacks",
   },
   {
-    path: "#project",
+    path: "/projects",
     label: "Projects",
   },
   {
-    path: "#social-links",
+  path: "#social-links",
     label: "Contacts",
   },
 ];
