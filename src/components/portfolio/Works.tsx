@@ -1,5 +1,5 @@
-import { tcw } from "../../assets";
-import { credilio } from "../../assets";
+import { tcw } from "@/assets";
+import { credilio } from "@/assets";
 import Triangle from "./Triangle";
 export default function Works() {
   return (

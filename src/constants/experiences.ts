@@ -1,4 +1,4 @@
-import { credilio, tcw } from "../assets";
+import { credilio, tcw } from "@/assets";
 
 export const experiences = [
   {

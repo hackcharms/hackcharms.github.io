@@ -17,7 +17,7 @@ import {
   vuetify,
   laravel,
   mysql,
-} from "../assets";
+} from "@/assets";
 
 export const technologies = [
   {

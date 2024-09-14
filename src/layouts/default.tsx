@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/Navbar";
-// import Footer from "../components/portfolio/motion/Footer";
+import Navbar from "@/components/Navbar";
+// import Footer from "@/components/portfolio/motion/Footer";
 import { Provider as ReduxProvider } from "react-redux";
-import store from "../store";
+import store from "@/store";
 export default function Layout() {
   return (
     <ReduxProvider store={store}>

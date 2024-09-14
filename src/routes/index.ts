@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import DefaultLayout from "../layouts/default";
-import App from "../views/App";
+import DefaultLayout from "@/layouts/default";
+import Index from "@/views/Index";
 export default createBrowserRouter([
   {
     path: "/",
@@ -8,7 +8,7 @@ export default createBrowserRouter([
     children: [
       {
         path: "",
-        Component: App,
+        Component: Index,
       },
     ],
   },

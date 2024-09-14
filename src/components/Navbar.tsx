@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { logo } from "../assets";
-import { navLinks } from "../constants";
+import { logo } from "@/assets";
+import { navLinks } from "@/constants";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (

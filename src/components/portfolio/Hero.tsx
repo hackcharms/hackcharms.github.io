@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Circle from "./Circle";
-import CircleAnimation from "../Animation/Circle";
+import CircleAnimation from "@/components/Animation/Circle";
 export default function Hero() {
   return (
     <div className="relative flex w-full flex-wrap justify-center md:justify-start">

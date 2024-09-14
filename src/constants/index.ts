@@ -1,4 +1,4 @@
-import { mobile, backend, creator, web } from "../assets";
+import { mobile, backend, creator, web } from "@/assets";
 export * from "./experiences";
 export * from "./technologies";
 export * from "./projects";

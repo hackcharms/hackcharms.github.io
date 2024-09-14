@@ -1,4 +1,4 @@
-import { technologies } from "../../constants";
+import { technologies } from "@/constants";
 import Circle from "./Circle";
 
 export default function Technologies() {

@@ -1,4 +1,4 @@
-import { socialLinks } from "../constants/social";
+import { socialLinks } from "@/constants/social";
 
 export default function Footer() {
   return (

@@ -1,4 +1,4 @@
-import { askMe, vue3Toaster } from "../assets";
+import { askMe, vue3Toaster } from "@/assets";
 
 export const projects = [
   {
