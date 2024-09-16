@@ -1,14 +1,15 @@
 import { technologies } from "@/constants";
 import Circle from "./Circle";
+import Button from "../core/button";
 
 export default function Technologies() {
   return (
     <>
-      <h1 className="px-4 text-4xl font-bold">
-        Technologies I have worked so far
+      <h1 className="text-4xl font-bold">
+        Technologies
       </h1>
-      <h2 className="pb-8 pl-6 text-2xl">
-        But Not limited to it, always thrive to achieve more
+      <h2 className="mb-8 text-2xl">
+        These are the Technologies I am expert on.
       </h2>
       <div className="flex flex-wrap justify-center gap-4 ">
         {technologies.map(({ name, icon }) => (
@@ -28,7 +29,7 @@ export default function Technologies() {
               gap={10}
               className="absolute rotate-[40deg] text-secondary/60 transition-all duration-500 group-hover/tech:rotate-[55deg]"
             />
-            <div className="absolute flex flex-col items-center justify-center">
+            <div className="absolute flex flex-col items-center  justify-center">
               <img
                 src={icon}
                 alt={name}
@@ -39,6 +40,12 @@ export default function Technologies() {
           </div>
         ))}
       </div>
+        <p className="mt-4 text-center text-lg">
+          not limited to it, I have worked on many more technologies
+        <Button variant="link" to='/technologies'>
+          see all technologies
+        </Button>
+        </p>
     </>
   );
 }

@@ -5,12 +5,8 @@ export * from "./projects";
 
 export const navLinks = [
   {
-    path: "/about",
-    label: "About",
-  },
-  {
-    path: "#works",
-    label: "Experience",
+    path: "/works",
+    label: "Work Experience",
   },
   {
     path: "/#technologies",
@@ -19,6 +15,10 @@ export const navLinks = [
   {
     path: "/projects",
     label: "Projects",
+  },
+  {
+    path: "/about",
+    label: "About",
   },
   {
   path: "#social-links",

@@ -27,7 +27,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center p-2 pl-10 md:w-1/2">
+      <div className="flex items-center justify-center md:w-1/2 md:p-2 md:pl-10">
         <div>
           <h1 className="text-5xl font-bold">
             Zubair Ahmad <span className="text-xl">(Hackcharms)</span>
