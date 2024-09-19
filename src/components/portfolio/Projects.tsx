@@ -1,4 +1,4 @@
-import { projects } from "@/constants";
+import { all as projects } from "@/constants/projects";
 
 export default function Projects() {
   return (
@@ -18,9 +18,8 @@ function ProjectCard() {
       {projects.map((project, index) => (
         <div
           key={index}
-          className={`mt-10 flex  flex-wrap py-10 ${
-            index % 2 == 0 ? "flex-row-reverse" : ""
-          }`}
+          className={`mt-10 flex  flex-wrap py-10 ${index % 2 == 0 ? "flex-row-reverse" : ""
+            }`}
         >
           <div className="w-full self-center md:w-1/2">
             <div className="flex flex-col items-center justify-center">

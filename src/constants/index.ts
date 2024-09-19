@@ -1,7 +1,6 @@
 import { mobile, backend, creator, web } from "@/assets";
 export * from "./experiences";
 export * from "./technologies";
-export * from "./projects";
 
 export const navLinks = [
   {
@@ -9,7 +8,7 @@ export const navLinks = [
     label: "Work Experience",
   },
   {
-    path: "/#technologies",
+    path: "/technologies",
     label: "Tech Stacks",
   },
   {

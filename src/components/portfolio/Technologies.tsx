@@ -43,7 +43,7 @@ export default function Technologies() {
         <p className="mt-4 text-center text-lg">
           not limited to it, I have worked on many more technologies
         <Button variant="link" to='/technologies'>
-          see all technologies
+          see all
         </Button>
         </p>
     </>
