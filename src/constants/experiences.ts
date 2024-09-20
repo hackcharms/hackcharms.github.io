@@ -1,4 +1,6 @@
 import { credilio, tcw } from "@/assets";
+import { projects as credilioProjects } from "./projects/credilioProjects";
+import { projects as TCWProjects } from "./projects/theCodeworkProjects";
 
 export const experiences = [
   {
@@ -14,6 +16,7 @@ export const experiences = [
       "Dynamic theme support to adopt and blend with partner platforms and multiple native supports like image, text sharing, clipboard, etc.",
       "Assisted the partners integration of our web page in their application and led a group of 3-4 developers.",
     ],
+    projects:credilioProjects.map(p=>p.id),
   },
   {
     title: "Full stack Developer",
@@ -27,5 +30,6 @@ export const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+    projects:TCWProjects.map(p=>p.id)
   },
 ];

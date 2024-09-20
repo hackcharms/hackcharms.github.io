@@ -19,7 +19,8 @@ import {
   mysql,
 } from "@/assets";
 import {  AllProjectsType, TechnologiesType } from "@/types";
-export const technologies:{id:TechnologiesType,name:string,icon:string,projects?:AllProjectsType[]}[] = [
+export type TechnologyType={id:TechnologiesType,name:string,icon:string,projects?:AllProjectsType[]};
+export const technologies:TechnologyType[] = [
   {
     id:'javascript',
     name: "JavaScript",
@@ -36,7 +37,7 @@ export const technologies:{id:TechnologiesType,name:string,icon:string,projects?
     id:'vue',
     name: "Vue JS",
     icon: vuejs,
-    projects:['credilio-advisor','novio-admin','credilio-d2c','vue3-toaster','qr-menu','credilio-pnp','novio-admin','vokabul8']
+    projects:['credilio-advisor','novio-admin','credilio-d2c','vue3-toaster','qr-menu','credilio-pnp','vokabul8']
 
   },
   {
