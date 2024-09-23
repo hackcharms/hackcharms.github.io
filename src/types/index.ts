@@ -1,3 +1,5 @@
+import { TechnologyType } from "@/constants";
+
 export type PersonalProjectType = 'vue3-toaster' | 'ask-me' | '2048';
 // export type WorkExperienceType='';
 export type CompanyType = 'thecodework' | 'credilio';
@@ -19,6 +21,5 @@ export type ProjectType<ID, Company = unknown> = {
   company?: Company,
   demo?: string,
   git?: string,
-  // technologies?: any
-  technologies: () => { id: TechnologiesType, name: string, icon: string, projects?: AllProjectsType | AllProjectsType[] }[]
+  technologies: () => TechnologyType[]
 }
