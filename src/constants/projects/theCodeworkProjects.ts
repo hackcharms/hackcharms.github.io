@@ -1,5 +1,6 @@
 import { CompanyType, ProjectType, TheCodeWorkProjectType } from "@/types";
 import { technologies as technologiesConst } from '@/constants/technologies';
+import { askMe } from "@/assets";
 
 function technologies() {
     return technologiesConst.filter(technology => {
@@ -13,7 +14,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
     name: 'Como',
     company: 'thecodework',
     description: '',
-    image: '',
+    image: askMe,
     tags: [],
     demo: '',
     git: '',
@@ -24,7 +25,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
     name: 'MD Ware',
     company: 'thecodework',
     description: '',
-    image: '',
+    image: askMe,
     tags: [],
     demo: '',
     git: '',
@@ -35,7 +36,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
     name: 'NPR Logistics',
     company: 'thecodework',
     description: '',
-    image: '',
+    image: askMe,
     tags: [],
     demo: '',
     git: '',
@@ -46,7 +47,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
     name: 'QR Menu',
     company: 'thecodework',
     description: '',
-    image: '',
+    image: askMe,
     tags: [],
     demo: '',
     git: '',
@@ -57,7 +58,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
     name: 'Vokabul8',
     company: 'thecodework',
     description: '',
-    image: '',
+    image: askMe,
     tags: [],
     demo: '',
     git: '',
@@ -68,7 +69,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
     name: 'Veight Coin',
     company: 'thecodework',
     description: '',
-    image: '',
+    image: askMe,
     tags: [],
     demo: '',
     git: '',

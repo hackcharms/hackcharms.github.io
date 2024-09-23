@@ -2,8 +2,9 @@ import Button from "@/components/core/button";
 import { all } from "@/constants/projects";
 
 export default function Projects() {
-  return <div className="grid grid-cols-2">
-    {all.map((project) => <div key={project.id}>
+  return <div className="grid grid-cols-2 gap-6">
+    {all.map((project) => <div key={project.id} className="text-center">
+      <img src={project.image} alt={project.name} className="mx-auto w-96"/>
       <Button variant="link" className="text-xl" to={`/projects/${project.id}`}>{project.name}</Button>
       <p>
         {project.description}
