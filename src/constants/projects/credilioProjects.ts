@@ -1,6 +1,6 @@
 import { CompanyType, CredilioProjectType, ProjectType } from "@/types";
 import { technologies as technologiesConst } from '@/constants/technologies';
-import { askMe } from "@/assets";
+import {  credilioPro, novio } from "@/assets";
 
 function technologies() {
     return technologiesConst.filter(technology => {
@@ -13,7 +13,7 @@ export const projects: ProjectType<CredilioProjectType, CompanyType>[] = [
         name: 'Direct to Customer Portal',
         company: 'credilio',
         description: '',
-        image: askMe,
+        image: novio,
         tags: [],
         demo: '',
         git: '',
@@ -24,7 +24,7 @@ export const projects: ProjectType<CredilioProjectType, CompanyType>[] = [
         name: 'Admin Portal',
         company: 'credilio',
         description: '',
-        image: askMe,
+        image: credilioPro,
         tags: [],
         demo: '',
         git: '',
@@ -35,29 +35,18 @@ export const projects: ProjectType<CredilioProjectType, CompanyType>[] = [
         name: 'Advisor Portal',
         company: 'credilio',
         description: '',
-        image: askMe,
+        image: credilioPro,
         tags: [],
         demo: '',
         git: '',
         industry: 'finance',
     },
-    // {
-    //     id: 'credilio-d2c',
-    //     name: '',
-    //     company: 'credilio',
-    //     description: '',
-    //     image: askMe,
-    //     tags: [],
-    //     demo: '',
-    //     git: '',
-    //     industry: 'finance',
-    // },
     {
         id: 'credilio-pnp',
         name: 'Plug and Play',
         company: 'credilio',
         description: '',
-        image: askMe,
+        image: credilioPro,
         tags: [],
         demo: '',
         git: '',

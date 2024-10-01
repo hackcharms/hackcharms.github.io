@@ -17,6 +17,9 @@ import {
   vuetify,
   laravel,
   mysql,
+  websocket,
+  vuex,
+  nuxtui,
 } from "@/assets";
 import {  AllProjectsType, TechnologiesType } from "@/types";
 export type TechnologyType={id:TechnologiesType,name:string,icon:string,projects?:AllProjectsType[]};
@@ -55,7 +58,7 @@ export const technologies:TechnologyType[] = [
   {
     id:'vuex',
     name: "Vuex",
-    icon: pinia,
+    icon: vuex,
     projects:['credilio-admin','credilio-advisor','como','qr-menu']
   },
   {
@@ -67,7 +70,7 @@ export const technologies:TechnologyType[] = [
   {
     id:'nuxt-ui',
     name: "NuxtUi",
-    icon: vuetify,
+    icon: nuxtui,
     projects:['credilio-admin','credilio-advisor','credilio-pnp']
   },
   {
@@ -87,7 +90,7 @@ export const technologies:TechnologyType[] = [
     id:'tailwind',
     name: "Tailwind CSS",
     icon: tailwind,
-    projects:[]
+    projects:['como','credilio-d2c','novio-admin','qr-menu','veight-coin','vokabul8']
   },
   // {
   //   id:'html',
@@ -110,6 +113,12 @@ export const technologies:TechnologyType[] = [
     name: "Laravel",
     icon: laravel,
     projects:['como','mdware','npr-logistics','veight-coin','vokabul8']
+  },
+  {
+    id:'websocket',
+    name: "WebSocket",
+    icon: websocket,
+    projects:['vokabul8']
   },
   {
     id:'mysql',
