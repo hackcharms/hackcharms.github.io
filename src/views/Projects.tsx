@@ -5,7 +5,7 @@ import { all } from "@/constants/projects";
 export default function Projects() {
   return <div className="grid grid-cols-2 gap-6">
     {all.map((project) => <div key={project.id} className="text-center">
-      <img src={project.image} alt={project.name} className="mx-auto mb-4 w-96" />
+      <img src={project.image} alt={project.name} className="mx-auto mb-4 max-h-80 max-w-80" />
       <Button variant="link" className="text-xl" to={`/projects/${project.id}`}>{project.name}</Button>
       <p className="my-4">
         {project.description}

@@ -76,7 +76,7 @@ export const projects: ProjectType<PersonalProjectType>[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: askMe,
+    image: "https://github.com/hackcharms/2048/raw/main/public/image.png?raw=true",
     git: "https://github.com/hackcharms/askme",
   },
 ]

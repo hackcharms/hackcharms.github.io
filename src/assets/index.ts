@@ -28,7 +28,7 @@ import mysql from "./tech/mysql.svg";
 import vuetify from "./tech/vuetify.svg";
 
 import tcw from "./company/tcw.png";
-import credilio from "./company/credilio.webp";
+import credilio from "./company/credilio.png";
 // projects
 import vue3Toaster from "./vue3-toaster.png";
 import askMe from "./askme.png";
