@@ -51,10 +51,10 @@ export default createBrowserRouter([
         path: "/svg-shapes",
         Component: SVGShapeGenerator,
       },
+      {
+        path:'test',
+        Component: Test
+      }
     ],
   },
-  {
-    path:'test',
-    Component: Test
-  }
 ]);

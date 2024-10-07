@@ -8,12 +8,13 @@ export type CredilioProjectType = 'credilio-advisor' | 'credilio-pnp' | 'credili
 export type TheCodeWorkProjectType = 'mdware' | 'qr-menu' | 'npr-logistics' | 'vokabul8' | 'veight-coin' | 'como';
 export type AllProjectsType = TheCodeWorkProjectType | CredilioProjectType | PersonalProjectType | 'all'
 export type TechnologiesType = 'javascript' | 'typescript' | 'php' | 'nodejs' | 'websocket' | 'mysql' | 'vue' | 'react' | 'nuxt' | 'pinia' | 'vuex' | 'laravel' |
-  'vuetify' | 'nuxt-ui' | 'redux' | 'tailwind' | 'html' | 'css' | 'mongodb' | 'threejs' | 'git' | 'docker'|'pusher'|'websocket'
-  ;
+  'vuetify' | 'nuxt-ui' | 'redux' | 'tailwind' | 'html' | 'css' | 'mongodb' | 'threejs' | 'git' | 'docker'|'pusher'|'websocket'|'vite';
+  
 export type IndustryType = 'gaming' | 'e-commerce' | 'finance'
 export type ProjectType<ID, Company = string> = {
   id: ID,
   name: string,
+  title:string,
   description: string | string[],
   tags: Record<string, unknown>[],
   industry?: IndustryType,

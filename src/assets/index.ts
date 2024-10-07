@@ -26,7 +26,10 @@ import vuex from "./tech/vuex.svg";
 import mysql from "./tech/mysql.svg";
 import vuetify from "./tech/vuetify.svg";
 import websocket from "./tech/websocket.png";
+import vite from "./tech/vite.svg";
+import bootstrap from "./tech/bootstrap.png";
 
+// Company
 import tcw from "./company/tcw.png";
 import credilio from "./company/credilio.png";
 // projects
@@ -60,6 +63,7 @@ export {
   redux,
   tailwind,
   typescript,
+  bootstrap,
   threejs,
   tcw,
   credilio,
@@ -71,6 +75,7 @@ export {
   vuetify,
   laravel,
   websocket,
+  vite,
   // Projects
   vue3Toaster,
   askMe,

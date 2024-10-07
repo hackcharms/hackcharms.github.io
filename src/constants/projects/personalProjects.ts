@@ -3,13 +3,15 @@ import { PersonalProjectType, ProjectType } from "@/types";
 import { technologies as technologiesConst } from '@/constants/technologies';
 function technologies() {
   return technologiesConst.filter(technology => {
-      return technology?.projects?.some((project) => project === this.id)
+    return technology?.projects?.some((project) => project === this.id)
   });
 }
 export const projects: ProjectType<PersonalProjectType>[] = [
   {
     id: 'vue3-toaster',
     name: "Vue3 Toaster",
+    title:
+      "Revolutionize your Vue.js 3 development with vue3-toaster, a lightweight and fully customizable toast notification package that seamlessly blends into your design, requiring zero third-party dependencies for a cleaner bundle size and offering effortless customization to match your exact design requirements.",
     description:
       "Revolutionize your Vue.js 3 development with vue3-toaster, a lightweight and fully customizable toast notification package that seamlessly blends into your design, requiring zero third-party dependencies for a cleaner bundle size and offering effortless customization to match your exact design requirements. Easily integrate toast notifications into your Vue.js components and tailor their look and feel to match your exact requirements. Easy-to-use composables and plugins for effortless integration.",
     tags: [
@@ -33,8 +35,19 @@ export const projects: ProjectType<PersonalProjectType>[] = [
   {
     id: 'ask-me',
     name: "Ask Me",
+    title: 'Similar to Stack Overflow, it provides a platform for individuals to ask questions, receive expert answers, and contribute to ongoing discussions',
     description: [
-      "Stack Overflow like Application where you can raise Questions, Update it and mark the best answer and reply on other's Questions as well",
+      "Similar to Stack Overflow, it provides a platform for individuals to ask questions, receive expert answers, and contribute to ongoing discussions",
+      `
+      <br/>
+      <ul class="list-disc list-inside">
+        <b>Key Features</b>:
+        <li><b>Question Posting</b>: Users can easily post questions related to a wide range of topics, from programming and technology to hobbies and interests.</li>
+        <li><b>Detailed Question Descriptions</b>: Provide comprehensive descriptions of your questions, including relevant context, error messages, or code snippets.</li>
+        <li><b>Answering and Upvoting</b>: Users can answer questions, provide helpful insights, and upvote the best responses.</li>
+        <li><b>Best Answer Selection</b>: The question asker can select the most helpful answer as the "best answer," recognizing the valuable contribution.</li>
+      </ul>
+      `
     ],
     tags: [
       {
@@ -59,8 +72,10 @@ export const projects: ProjectType<PersonalProjectType>[] = [
   }, {
     id: '2048',
     name: "2048",
+    title: `2048 is a popular puzzle game where the objective is to slide numbered tiles on a grid to combine them and create a tile with the number 2048.`,
     description: [
-      "status pending",
+      `2048 is a popular puzzle game where the objective is to slide numbered tiles on a grid to combine them and create a tile with the number 2048.`,
+      `The game is simple to learn but challenging to master, making it a captivating pastime for players of all ages.`,
     ],
     tags: [
       {
@@ -80,7 +95,7 @@ export const projects: ProjectType<PersonalProjectType>[] = [
     git: "https://github.com/hackcharms/askme",
   },
 ]
-.map(el => {
-  Object.assign(el, { technologies })
-  return el as ProjectType<PersonalProjectType>;
-});
+  .map(el => {
+    Object.assign(el, { technologies })
+    return el as ProjectType<PersonalProjectType>;
+  });

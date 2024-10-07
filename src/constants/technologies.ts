@@ -5,6 +5,7 @@ import {
   // css,
   reactjs,
   redux,
+  vite,
   tailwind,
   nodejs,
   mongodb,
@@ -19,6 +20,7 @@ import {
   mysql,
   websocket,
   vuex,
+  bootstrap,
   nuxtui,
 } from "@/assets";
 import {  AllProjectsType, TechnologiesType } from "@/types";
@@ -92,6 +94,12 @@ export const technologies:TechnologyType[] = [
     icon: tailwind,
     projects:['como','credilio-d2c','novio-admin','qr-menu','veight-coin','vokabul8']
   },
+  {
+    id:'vite',
+    name: "Vite",
+    icon: vite,
+    projects:['2048','credilio-d2c','novio-admin','credilio-advisor','vue3-toaster']
+  },
   // {
   //   id:'html',
   //   name: "HTML 5",
@@ -112,7 +120,7 @@ export const technologies:TechnologyType[] = [
     id:'laravel',
     name: "Laravel",
     icon: laravel,
-    projects:['como','mdware','npr-logistics','veight-coin','vokabul8']
+    projects:['como','mdware','npr-logistics','veight-coin','vokabul8','ask-me']
   },
   {
     id:'websocket',
@@ -124,7 +132,7 @@ export const technologies:TechnologyType[] = [
     id:'mysql',
     name: "MySql",
     icon: mysql,
-    projects:['como','mdware','npr-logistics','veight-coin','vokabul8']
+    projects:['como','mdware','npr-logistics','veight-coin','vokabul8','ask-me']
   },
   {
     id:'mongodb',
@@ -137,6 +145,12 @@ export const technologies:TechnologyType[] = [
     name: "Three JS",
     icon: threejs,
     projects:[]
+  },
+  {
+    id:'bootstrap',
+    name: "bootstrap CSS",
+    icon: bootstrap,
+    projects:['ask-me']
   },
   {
     id:'git',

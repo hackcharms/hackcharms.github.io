@@ -13,14 +13,15 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
         id: 'como',
         name: 'Como',
         company: 'thecodework',
+        title: `The project involved integrating a data-driven customer engagement and loyalty solution (Como) with Lightspeed's F&B and retail platforms. The goal was to enable Lightspeed customers to use Como's loyalty features alongside existing options.`,
         description: [
             `The project involved integrating a data-driven customer engagement and loyalty solution (Como) with Lightspeed's F&B and retail platforms. The goal was to enable Lightspeed customers to use Como's loyalty features alongside existing options.`,
             `<ul class="list-disc list-inside">
             Key features included:
             <li><b>Synchronization</b>: Integrating sales data from Lightspeed to Como.
             </li>
-<li><b>Web Interface</b>: Providing a web interface on the POS to identify Como customers and offer discounts or point redemption.</li>
-<li><b>Technical Implementation</b>: Using Laravel for the backend and a standalone VueJS SPA for the web interface.</li>
+            <li><b>Web Interface</b>: Providing a web interface on the POS to identify Como customers and offer discounts or point redemption.</li>
+            <li><b>Technical Implementation</b>: Using Laravel for the backend and a standalone VueJS SPA for the web interface.</li>
             </ul>`
         ],
         image: como,
@@ -44,6 +45,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
         id: 'npr-logistics',
         name: 'NPR Logistics',
         company: 'thecodework',
+        title: 'NPR Logistics is an ERP Solution targets to facilitates logistics pickup & drop across the country through its network of Transporters, Vehicle Owners and Drivers.',
         description: [
             'NPR Logistics is an ERP Solution targets to facilitates logistics pickup & drop across the country through its network of Transporters, Vehicle Owners and Drivers.',
             'NPR then creates a logistics pickup & drop order for a transporter and through its network of Vehicle owners & drivers in order to fulfil the order.',
@@ -75,6 +77,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
         id: 'qr-menu',
         name: 'QR Menu',
         company: 'thecodework',
+        title: '<b>QR Menu</b>, a Belgian product developed by <b>MDWare</b>, offers innovative digital menu solutions for restaurants and cafes.',
         description: ['<b>QR Menu</b>, a Belgian product developed by <b>MDWare</b>, offers innovative digital menu solutions for restaurants and cafes. Customers can easily browse and order food using their own smartphones or on-site kiosks.',
             `<ul class="list-disc list-inside">
             Key Features:
@@ -97,6 +100,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
         id: 'vokabul8',
         name: 'Vokabul8',
         company: 'thecodework',
+        title: `Vokabul8 is a vocabulary-based betting platform. Users can play four different games, including "What's the Word?", "Golden Number", "Letters of Fortune", and "The Ultimate Challenge".`,
         description: [
             `Vokabul8 is a vocabulary-based betting platform that uses VeightCoin as its virtual currency. Users can play four different games, including "What's the Word?", "Golden Number", "Letters of Fortune", and "The Ultimate Challenge".`,
             '',
