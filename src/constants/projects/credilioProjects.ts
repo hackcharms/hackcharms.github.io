@@ -2,7 +2,7 @@ import { CompanyType, CredilioProjectType, ProjectType } from "@/types";
 import { technologies as technologiesConst } from '@/constants/technologies';
 import { credilioPro, novio } from "@/assets";
 
-function technologies() {
+function technologies(this: Record<string,unknown>) {
     return technologiesConst.filter(technology => {
         return technology?.projects?.some((project) => project === this.id)
     });
@@ -97,5 +97,5 @@ export const projects: ProjectType<CredilioProjectType, CompanyType>[] = [
 ]
     .map(el => {
         Object.assign(el, { technologies })
-        return el as ProjectType<CredilioProjectType, CompanyType>;
+        return el as unknown as ProjectType<CredilioProjectType, CompanyType>;
     })

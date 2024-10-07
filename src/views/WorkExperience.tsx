@@ -64,7 +64,7 @@ function ExperienceCard({ experience, reverse, className }: { experience: Experi
         Projects
       </h1>
       <div className="flex flex-wrap justify-center gap-2">
-        {experience.projectData.map(project => <LinkCard name={project.name} icon={project.image} to={`/projects/${project.id}`} key={project.id} />)}
+        {experience.projectData.map(project => <LinkCard name={project.name} icon={project.image} />)}
       </div>
     </div>
     <div className=" text-center">
@@ -72,7 +72,7 @@ function ExperienceCard({ experience, reverse, className }: { experience: Experi
         Technologies
       </h1>
       <div className="flex flex-wrap justify-center gap-2">
-        {experience.technologies?.map(tech => <LinkCard icon={tech.icon} name={tech.name} to={`/technologies/${tech.id}`} key={tech.id} />)}
+        {experience.technologies?.map(tech => <LinkCard icon={tech.icon} name={tech.name} />)}
       </div>
     </div>
   </>

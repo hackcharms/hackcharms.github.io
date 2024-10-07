@@ -1,7 +1,7 @@
 import { credilio, tcw } from "@/assets";
 import { projects as credilioProjects } from "./projects/credilioProjects";
 import { projects as TCWProjects } from "./projects/theCodeworkProjects";
-import { ProjectType } from "@/types";
+import { CredilioProjectType, ProjectType, TheCodeWorkProjectType } from "@/types";
 import { technologies, TechnologyType } from "./technologies";
 export type ExperienceType<P> = {
   title: string;
@@ -39,7 +39,7 @@ export const experiences:ExperienceType<unknown>[] = [
     projectData: credilioProjects,
     technologies:technologies.filter((techonolgy)=>{
       return techonolgy.projects?.some(project=>{
-        return credilioProjects.map(p => p.id).includes(project);
+        return credilioProjects.map(p => p.id).includes(project as CredilioProjectType);
       })
     })
   },
@@ -62,7 +62,7 @@ export const experiences:ExperienceType<unknown>[] = [
     projectData: TCWProjects,
     technologies:technologies.filter((techonolgy)=>{
       return techonolgy.projects?.some(project=>{
-        return TCWProjects.map(p => p.id).includes(project);
+        return TCWProjects.map(p => p.id).includes(project as TheCodeWorkProjectType);
       })
     })
   },

@@ -13,7 +13,7 @@ export default function ProjectsDetails() {
         <h1 className="mt-4 text-xl font-bold md:text-3xl">
           {project.name}
         </h1>
-       {project.company && <p className="text-xl">
+        {project.company && <p className="text-xl">
           <svg className="mr-2 inline size-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none" viewBox="0 0 24 24"><path d="M19 2H9c-1.103 0-2 .897-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4c0-1.103-.897-2-2-2zM5 12h6v8H5v-8zm14 8h-6v-8c0-1.103-.897-2-2-2H9V4h10v16z"></path><path d="M11 6h2v2h-2zm4 0h2v2h-2zm0 4.031h2V12h-2zM15 14h2v2h-2zm-8 .001h2v2H7z"></path></svg>
           <span className="pr-2">
             {[changeCase(project.company, 'titlecase'), changeCase(project.industry, 'titlecase')].join(' - ')}
@@ -21,22 +21,22 @@ export default function ProjectsDetails() {
         </p>}
         <p className="my-2 flex gap-2">
           {project.tags.map(tag =>
-            <span key={tag.name || tag} className="rounded border px-2">{tag.name || tag}</span>
+            <span key={typeof tag == 'string' ? tag : tag.name} className="rounded border px-2">{typeof tag == 'string' ? tag : tag.name}</span>
           )
           }
         </p>
         <p className="my-2 flex gap-2">
           {
-          project.demo&&
-          <Button variant="link" to={project.demo}>
-            Demo
-          </Button>
+            project.demo &&
+            <Button variant="link" to={project.demo}>
+              Demo
+            </Button>
           }
           {
-          project.git&&
-          <Button variant="link" to={project.git}>
-            Git Repo
-          </Button>
+            project.git &&
+            <Button variant="link" to={project.git}>
+              Git Repo
+            </Button>
           }
         </p>
       </div>
