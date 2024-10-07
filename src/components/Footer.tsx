@@ -1,8 +1,9 @@
-import { socialLinks } from "../constants/social";
+import { socialLinks } from "@/constants/social";
 
 export default function Footer() {
   return (
     <footer className="px-2 py-10 text-center">
+      <span id="social-links"> &nbsp; </span>
       <div className="flex justify-center gap-2">
         {socialLinks.map(({ icon, label, link }) => (
           <a

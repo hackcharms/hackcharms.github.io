@@ -1,4 +1,4 @@
-import { outlineStarPath, polygonPath } from "../utils/polygon";
+import { outlineStarPath, polygonPath } from "@/utils/polygon";
 
 export default function Star({ className = "" }) {
   return (

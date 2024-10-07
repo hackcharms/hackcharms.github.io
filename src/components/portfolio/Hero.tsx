@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Circle from "./Circle";
-import CircleAnimation from "../Animation/Circle";
+import CircleAnimation from "@/components/Animation/Circle";
 export default function Hero() {
   return (
     <div className="relative flex w-full flex-wrap justify-center md:justify-start">
@@ -27,7 +27,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center p-2 pl-10 md:w-1/2">
+      <div className="flex items-center justify-center md:w-1/2 md:p-2 md:pl-10">
         <div>
           <h1 className="text-5xl font-bold">
             Zubair Ahmad <span className="text-xl">(Hackcharms)</span>

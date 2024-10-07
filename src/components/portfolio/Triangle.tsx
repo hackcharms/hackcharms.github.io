@@ -1,4 +1,4 @@
-import { polygonPath } from "../../utils/polygon";
+import { polygonPath } from "@/utils/polygon";
 
 export default function Triangle({ strokeOpacity = 0.2 }) {
   return (

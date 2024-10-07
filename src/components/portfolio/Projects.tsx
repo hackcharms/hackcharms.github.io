@@ -1,4 +1,6 @@
-import { projects } from "../../constants";
+import { all as projects } from "@/constants/projects";
+import Button from "../core/button";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
@@ -12,15 +14,15 @@ export default function Projects() {
   );
 }
 
+const startPoint = (Math.random() * (projects.length - 4) | 0);
 function ProjectCard() {
   return (
     <>
-      {projects.map((project, index) => (
+      {projects.slice(startPoint, startPoint + 4).map((project, index) => (
         <div
           key={index}
-          className={`mt-10 flex  flex-wrap py-10 ${
-            index % 2 == 0 ? "flex-row-reverse" : ""
-          }`}
+          className={`mt-10 flex flex-wrap py-10 ${index % 2 == 0 ? "flex-row-reverse" : ""
+            }`}
         >
           <div className="w-full self-center md:w-1/2">
             <div className="flex flex-col items-center justify-center">
@@ -30,13 +32,12 @@ function ProjectCard() {
                 className="size-52"
               />
 
-              <a
-                href={project.demo || project.git}
+              <Link
+                to={`/projects/${project.id}`}
                 className="text-2xl font-semibold text-secondary underline"
-                target="_blank"
               >
                 {project.name}
-              </a>
+              </Link>
               <p className="text-balance text-center text-lg">
                 A lightweight and fully customizable toast notification package
                 that seamlessly blends into your design.
@@ -44,11 +45,7 @@ function ProjectCard() {
             </div>
           </div>
           <div className="w-full self-center md:w-1/2">
-            {Array.isArray(project.description) ? (
-              project.description.map((el, _index) => <p key={_index}>{el}</p>)
-            ) : (
-              <p>{project.description}</p>
-            )}
+            <p dangerouslySetInnerHTML={{ __html: Array.isArray(project.description) ? project.description?.join('<br>') : project.description }} />
             <div className="my-4 text-center">
               {project.tags.map((tag) => (
                 <span
@@ -62,6 +59,9 @@ function ProjectCard() {
           </div>
         </div>
       ))}
+      <p className="text-center">
+        not limited to it, I have a broad portfolio of projects. <Button variant="link" to='/projects'>see all</Button>
+      </p>
     </>
   );
 }

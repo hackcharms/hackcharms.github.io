@@ -1,4 +1,4 @@
-import { x,github,instagram,linkedIn,stackOverflow } from "../assets/social"
+import { x,github,instagram,linkedIn,stackOverflow } from "@/assets/social"
 
 export const socialLinks:{
     label:string,

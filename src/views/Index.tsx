@@ -1,5 +1,4 @@
 import Divider from "@/components/Divider";
-import Footer from "@/components/Footer";
 import Star from "@/components/Star";
 import { Hero, About, Technologies } from "@/components/portfolio";
 import Projects from "@/components/portfolio/Projects";
@@ -26,8 +25,6 @@ const App = () => {
           <Divider id="project" label="Project" />
           <Projects />
         </div>
-        <span id="social-links"> &nbsp; </span>
-        <Footer />
       </div>
     </>
   );
