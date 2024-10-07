@@ -49,10 +49,10 @@ function ProjectCard() {
             <div className="my-4 text-center">
               {project.tags.map((tag) => (
                 <span
-                  key={tag.name}
+                  key={typeof tag ==='string'?tag:tag.name}
                   className="mx-1 rounded-lg border border-light/40 px-2 py-1"
                 >
-                  {tag.name}
+                  {typeof tag ==='string'?tag:tag.name}
                 </span>
               ))}
             </div>
