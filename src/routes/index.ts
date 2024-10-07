@@ -5,7 +5,7 @@ import About from "@/views/About";
 import Projects from "@/views/Projects";
 import ProjectsDetails from "@/views/ProjectsDetails";
 import Technologies from "@/views/Technologies";
-import TechnologiesDetails from "@/views/TechnologiesDetails";
+// import TechnologiesDetails from "@/views/TechnologiesDetails";
 import WorkExperience from "@/views/WorkExperience";
 import WorkExperienceDetail from "@/views/WorkExperienceDetail";
 import SVGShapeGenerator from "@/views/SVGShapeGenerator";
@@ -43,10 +43,10 @@ export default createBrowserRouter([
         path: "/technologies",
         Component: Technologies,
       },
-      {
-        path: "/technologies/:id",
-        Component: TechnologiesDetails,
-      },
+      // {
+      //   path: "/technologies/:id",
+      //   Component: TechnologiesDetails,
+      // },
       {
         path: "/svg-shapes",
         Component: SVGShapeGenerator,

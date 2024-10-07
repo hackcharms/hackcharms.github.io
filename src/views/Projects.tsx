@@ -19,12 +19,12 @@ export default function Projects() {
 
 function TechnologyLink({ tech }: { tech: TechnologyType }) {
     return (
-        <Button variant="link" to={`/technologies/${tech.id}`} className="m-1 flex items-center justify-center gap-1">
+        <div className="m-1 flex items-center justify-center gap-1 p-2">
             <img src={tech.icon} alt="" className="size-4" />
             <span>
                 {tech.name}
             </span>
-        </Button>
+        </div>
 
     )
 }

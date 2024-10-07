@@ -16,7 +16,7 @@ function TechnologiesCard({ tech }: {tech:TechnologyType}) {
     </div>
     <div className="flex flex-wrap justify-center">
       {tech.projects?.map(project =>
-        <Button variant="link" to={project==='all'?'':`/projects/${project}`} key={project} className="m-1">
+        <Button variant="link" to={project==='all'?'#':`/projects/${project}`} key={project} className="m-1">
           {changeCase(project,'titlecase')}
         </Button>
       )}

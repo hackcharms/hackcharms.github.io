@@ -42,7 +42,7 @@ export const technologies:TechnologyType[] = [
     id:'vue',
     name: "Vue JS",
     icon: vuejs,
-    projects:['credilio-advisor','novio-admin','credilio-d2c','vue3-toaster','qr-menu','credilio-pnp','vokabul8']
+    projects:['credilio-advisor','novio-admin','credilio-d2c','vue3-toaster','qr-menu','credilio-pnp','vokabul8','ask-me']
 
   },
   {
