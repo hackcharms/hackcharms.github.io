@@ -123,7 +123,7 @@ export const projects: ProjectType<TheCodeWorkProjectType, CompanyType>[] = [
         ],
         image: vokabul8,
         tags: [],
-        demo: '',
+        demo: 'https://vokabul8.net/',
         git: '',
         industry: 'gaming',
     },

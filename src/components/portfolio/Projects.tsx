@@ -1,5 +1,6 @@
 import { all as projects } from "@/constants/projects";
 import Button from "../core/button";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
@@ -31,13 +32,12 @@ function ProjectCard() {
                 className="size-52"
               />
 
-              <a
-                href={project.demo || project.git}
+              <Link
+                to={`/projects/${project.id}`}
                 className="text-2xl font-semibold text-secondary underline"
-                target="_blank"
               >
                 {project.name}
-              </a>
+              </Link>
               <p className="text-balance text-center text-lg">
                 A lightweight and fully customizable toast notification package
                 that seamlessly blends into your design.

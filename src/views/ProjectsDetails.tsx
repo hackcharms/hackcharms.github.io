@@ -1,3 +1,4 @@
+import Button from "@/components/core/button";
 import { all } from "@/constants/projects";
 import { changeCase } from "@/utils";
 import { useParams } from "react-router-dom";
@@ -22,6 +23,20 @@ export default function ProjectsDetails() {
           {project.tags.map(tag =>
             <span key={tag.name || tag} className="rounded border px-2">{tag.name || tag}</span>
           )
+          }
+        </p>
+        <p className="my-2 flex gap-2">
+          {
+          project.demo&&
+          <Button variant="link" to={project.demo}>
+            Demo
+          </Button>
+          }
+          {
+          project.git&&
+          <Button variant="link" to={project.git}>
+            Git Repo
+          </Button>
           }
         </p>
       </div>

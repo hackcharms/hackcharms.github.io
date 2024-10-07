@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { logo } from "@/assets";
 import { navLinks } from "@/constants";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -51,14 +52,21 @@ export default function Navbar() {
           <ul className="mt-4 flex flex-col p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse ">
             {navLinks.map(({ label,target, path }) => (
               <li key={label}>
-                <a
+                {target==='_blank'||path.startsWith('#')?<a
                   href={`${path}`}
                   className="block rounded px-3 py-2 text-light-500 hover:bg-light-900 hover:text-primary md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-secondary  "
                   aria-current="page"
                   target={target??'_self'}
                 >
                   {label}
-                </a>
+                </a>:
+                <Link
+                  to={`${path}`}
+                  className="block rounded px-3 py-2 text-light-500 hover:bg-light-900 hover:text-primary md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-secondary  "
+                  aria-current="page"
+                >
+                  {label}
+                </Link>}
               </li>
             ))}
           </ul>
