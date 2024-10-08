@@ -92,6 +92,7 @@ export const projects: ProjectType<PersonalProjectType>[] = [
       },
     ],
     image: "https://github.com/hackcharms/2048/raw/main/public/image.png?raw=true",
+    demo: "https://hackcharms.xyz/2048",
     git: "https://github.com/hackcharms/askme",
   },
 ]
